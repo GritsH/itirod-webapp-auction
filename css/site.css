@@ -1,0 +1,116 @@
+body {
+    background: #c2ccff;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    height: 13%;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #824CA4;
+}
+
+a.name {
+    position: absolute;
+    width: 13%;
+    height: 13%;
+    left: 39%;
+    top: 8px;
+
+    font-family: 'Roboto', serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 75px;
+
+    text-align: center;
+
+    color: #F9E2E2;
+
+    mix-blend-mode: lighten;
+}
+
+a.name-shadow {
+
+    position: absolute;
+    width: 13%;
+    height: 13%;
+    left: 39.5%;
+    top: 8px;
+
+    font-family: 'Roboto', serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 75px;
+
+    text-align: center;
+
+    color: #000000;
+}
+
+.button-text{
+    position: center;
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 140%;
+    line-height: 100%;
+    /* identical to box height */
+
+    color: #FFFFFF;
+}
+
+.lot-preview {
+    top: 10%;
+    height: 65%;
+    left: 3%;
+    right: 3%;
+    /*text-align: center;*/
+    background: #FDF0F0;
+    border: 1px solid #824CA4;
+    box-sizing: border-box;
+    border-radius: 37px;
+}
+
+.scroll {
+    position: absolute;
+    width: 53%;
+    height: 80%;
+    left: 3%;
+    top: 15%;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    background: rgba(130, 76, 164, 0.29);
+    border: 5px solid #824CA4;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.item-info {
+    display: inline-block;
+    text-align: left;
+    margin-left: 28%;
+    width: 25%;
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 120%;
+    line-height: 135%;
+}
+
+.lot-info {
+    display: inline-block;
+    text-align: left;
+    margin-left: 3%;
+    width: 25%;
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 120%;
+    line-height: 135%;
+}

@@ -1,0 +1,99 @@
+
+
+.email-input {
+    position: absolute;
+    width: 31%;
+    height: 7%;
+    left: 31.5%;
+    top: 27%;
+
+    background: rgba(130, 76, 164, 0.29);
+    border: 3px solid #824CA4;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.password-input{
+    position: absolute;
+    width: 31%;
+    height: 7%;
+    left: 31.5%;
+    top: 42%;
+
+    background: rgba(130, 76, 164, 0.29);
+    border: 3px solid #824CA4;
+    box-sizing: border-box;
+}
+
+.repeat-password-input{
+    position: absolute;
+    width: 31%;
+    height: 7%;
+    left: 31.5%;
+    top: 60%;
+
+    background: rgba(130, 76, 164, 0.29);
+    border: 3px solid #824CA4;
+    box-sizing: border-box;
+}
+
+.log-in{
+
+    position: absolute;
+    width: 10%;
+    height: 8%;
+    left: 42%;
+    top: 55%;
+
+    background: #824CA4;
+}
+
+::-webkit-input-placeholder {
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 53px;
+    color: #FFFFFF;
+
+}
+
+input[type="text"]{
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 53px;
+    /* identical to box height */
+
+    color: #FFFFFF;
+}
+
+input[type="password"]{
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 53px;
+    /* identical to box height */
+
+    color: #FFFFFF;
+}
+
+
+
+.sing-up-text{
+    position: absolute;
+    width: 25%;
+    height: 30%;
+    left: 35%;
+    top: 67%;
+
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+
+    color: #824CA4;
+}
