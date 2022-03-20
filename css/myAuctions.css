@@ -1,0 +1,26 @@
+.scroll{
+    left: 20%;
+}
+
+.leave{
+    width: 20%;
+    margin-left: 60%;
+    height: 40px;
+    background: #824CA4;
+}
+
+.enter-room{
+    width: 20%;
+    margin-left: 60%;
+    height: 40px;
+    background: #824CA4;
+}
+
+.back{
+    position: absolute;
+    top: 15%;
+    width: 15%;
+    margin-left: 77%;
+    height: 7%;
+    background: #824CA4;
+}

@@ -21,9 +21,6 @@
     left: 31.5%;
     top: 42%;
 
-    background: rgba(130, 76, 164, 0.29);
-    border: 3px solid #824CA4;
-    box-sizing: border-box;
 }
 
 .log-in{
@@ -37,25 +34,6 @@
     background: #824CA4;
 }
 
-::-webkit-input-placeholder {
-    font-family: 'Roboto', serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 53px;
-    color: #FFFFFF;
-
-}
-
-
-input[type="password"]{
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 53px;
-    /* identical to box height */
-
-    color: #FFFFFF;
-}
 
 
 

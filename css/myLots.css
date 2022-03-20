@@ -1,0 +1,20 @@
+.scroll{
+    left: 20%;
+}
+
+.watch{
+    /*margin-top: 3%;*/
+    width: 20%;
+    margin-left: 60%;
+    height: 10%;
+    background: #824CA4;
+}
+
+.back{
+    position: absolute;
+    top: 15%;
+    width: 15%;
+    margin-left: 77%;
+    height: 7%;
+    background: #824CA4;
+}

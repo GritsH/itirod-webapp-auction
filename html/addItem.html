@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="../css/site.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/addItem.css"/>
+
 </head>
 <body>
 <header>
@@ -12,5 +14,34 @@
         <a class="name">Auction</a>
     </div>
 </header>
+<form action="myItems.html">
+    <label class="name-label" for="name-input">
+        Item's name
+    </label>
+    <input id="name-input" class="item-name-input" type="text"/>
+
+    <label class="type-label" for="item-type-input">
+        Item's type
+    </label>
+    <select id="item-type-input" class="type-dropdown" >
+        <option value="PAINTING">Painting</option>
+        <option value="DECOR"> Decor</option>
+        <option value="BOOK">Book</option>
+        <option value="MUSICAL_INSTRUMENT">Musical instrument</option>
+        <option value="FURNITURE">Furniture</option>
+        <option value="OTHER">Other</option>
+    </select>
+
+    <label class="description-label" for="description-input">
+        Description
+    </label>
+    <textarea id="description-input" class="description-area"></textarea>
+
+    <button class="add-button" type="submit">
+        <i class="button-text">
+            Save
+        </i>
+    </button>
+</form>
 </body>
 </html>

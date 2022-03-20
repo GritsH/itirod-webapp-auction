@@ -1,0 +1,45 @@
+.item-info_{
+    display: inline-block;
+    text-align: left;
+    width: 25%;
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 145%;
+    line-height: 155%;
+    color: black;
+}
+
+.display-info{
+    position: absolute;
+    margin-top: 8%;
+    margin-left: 45%;
+    width: 50%;
+}
+
+.lot-info_{
+    display: inline-block;
+    text-align: left;
+    width: 25%;
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 180%;
+    line-height: 135%;
+    color: black;
+}
+
+.bidding-price-input{
+    position: absolute;
+    top: 80%;
+    left:25%
+}
+
+.bid-button{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    height: 8%;
+    width: 10%;
+    background: #824CA4;
+}
