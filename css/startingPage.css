@@ -26,18 +26,6 @@
     box-sizing: border-box;
 }
 
-.repeat-password-input{
-    position: absolute;
-    width: 31%;
-    height: 7%;
-    left: 31.5%;
-    top: 60%;
-
-    background: rgba(130, 76, 164, 0.29);
-    border: 3px solid #824CA4;
-    box-sizing: border-box;
-}
-
 .log-in{
 
     position: absolute;
@@ -59,16 +47,6 @@
 
 }
 
-input[type="text"]{
-    font-family: 'Roboto', serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 53px;
-    /* identical to box height */
-
-    color: #FFFFFF;
-}
 
 input[type="password"]{
     font-weight: 400;

@@ -27,7 +27,7 @@ a.name {
 
     text-align: center;
 
-    color: #F9E2E2;
+    color: #FFFFFF;
 
     mix-blend-mode: lighten;
 }
@@ -113,4 +113,26 @@ a.name-shadow {
     font-weight: 400;
     font-size: 120%;
     line-height: 135%;
+}
+
+input[type="text"]{
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 53px;
+    /* identical to box height */
+
+    color: #FFFFFF;
+}
+
+textarea{
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 53px;
+    /* identical to box height */
+
+    color: #FFFFFF;
 }
