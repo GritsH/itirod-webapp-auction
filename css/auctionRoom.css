@@ -1,4 +1,4 @@
-.item-info_{
+.item-info_ {
     display: inline-block;
     text-align: left;
     width: 25%;
@@ -10,14 +10,14 @@
     color: black;
 }
 
-.display-info{
-    position: absolute;
-    margin-top: 8%;
+.display-info {
+    display: flex;
+    flex-direction: column;
     margin-left: 45%;
     width: 50%;
 }
 
-.lot-info_{
+.lot-info_ {
     display: inline-block;
     text-align: left;
     width: 25%;
@@ -29,17 +29,16 @@
     color: black;
 }
 
-.bidding-price-input{
-    position: absolute;
-    top: 80%;
-    left:25%
+.bidding-price-input {
+    margin-top: 20px;
+    margin-left: 35%;
+
 }
 
-.bid-button{
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    height: 8%;
-    width: 10%;
+.bid-button {
+    margin-top: 10px;
+    margin-left: 35%;
+    width: 12%;
+    height: 45px;
     background: #824CA4;
 }

@@ -14,27 +14,33 @@
         <a class="name">Auction</a>
     </div>
 </header>
-<div class="display-info">
-    <label class="item-info_">Name: </label><br>
-    <label class="item-info_">Description: </label><br>
-    <label class="item-info_">Starting price: </label><br>
-    <label class="item-info_">Auction step: </label><br>
-    <br>
-    <br>
-    <label class="item-info_">Amount of users: </label><br>
-    <br>
-    <br>
-    <label class="lot-info_">Current price: </label><br><br>
-    <label class="lot-info_">Lot leader: </label><br>
+<div style="display: flex; flex-direction: column">
+    <div class="display-info">
+        <label class="item-info_">Name: </label><br>
+        <label class="item-info_">Description: </label><br>
+        <label class="item-info_">Starting price: </label><br>
+        <label class="item-info_">Auction step: </label><br>
+        <br>
+        <br>
+        <label class="item-info_">Amount of users: </label><br>
+        <br>
+        <br>
+        <label class="lot-info_">Current price: </label><br><br>
+        <label class="lot-info_">Lot leader: </label><br>
+    </div>
+    <div>
+        <input type="text" class="bidding-price-input" placeholder="Current price + step"/>
+        <form>
+            <button type="submit" class="bid-button">
+                <i class="button-text">
+                    BID
+                </i>
+            </button>
+        </form>
+    </div>
+
 </div>
-<input type="text" class="bidding-price-input" placeholder="Current price + step"/>
-<form>
-    <button type="submit" class="bid-button">
-        <i class="button-text">
-            BID
-        </i>
-    </button>
-</form>
+
 
 </body>
 </html>
