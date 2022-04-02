@@ -11,6 +11,7 @@ header {
 }
 
 a.name {
+    text-shadow: black 5px 0px;
     width: 13%;
     height: 13%;
     left: 39%;
@@ -28,24 +29,8 @@ a.name {
     mix-blend-mode: lighten;
 }
 
-a.name-shadow {
-    width: 13%;
-    height: 13%;
-    margin-left: 10px;
-    top: 8px;
 
-    font-family: 'Roboto', serif;
-    font-style: italic;
-    font-weight: 600;
-    font-size: 64px;
-    line-height: 75px;
-
-    text-align: center;
-
-    color: #000000;
-}
-
-.button-text{
+.button-text {
     position: center;
     font-family: 'Roboto', serif;
     font-style: normal;
@@ -105,7 +90,7 @@ a.name-shadow {
     line-height: 135%;
 }
 
-input[type="text"]{
+input[type="text"] {
     font-family: 'Roboto', serif;
     font-style: normal;
     font-weight: 400;
@@ -119,7 +104,7 @@ input[type="text"]{
     box-sizing: border-box;
 }
 
-input[type="password"]{
+input[type="password"] {
     font-weight: 400;
     font-size: 25px;
     line-height: 53px;
@@ -131,7 +116,7 @@ input[type="password"]{
     box-sizing: border-box;
 }
 
-input[type="datetime-local"]{
+input[type="datetime-local"] {
     font-family: 'Roboto', serif;
     font-style: normal;
     font-weight: 400;
@@ -145,7 +130,7 @@ input[type="datetime-local"]{
     box-sizing: border-box;
 }
 
-textarea{
+textarea {
     font-family: 'Roboto', serif;
     font-style: normal;
     font-weight: 400;
@@ -156,7 +141,7 @@ textarea{
     color: #FFFFFF;
 }
 
-label{
+label {
     font-family: 'Roboto', serif;
     font-style: normal;
     font-weight: 400;
@@ -167,7 +152,7 @@ label{
     color: #824CA4;
 }
 
-select{
+select {
     background: rgba(130, 76, 164, 0.29);
     border: 3px solid #824CA4;
     box-sizing: border-box;
@@ -182,13 +167,13 @@ select{
     color: #FFFFFF;
 }
 
-textarea{
+textarea {
     background: rgba(130, 76, 164, 0.29);
     border: 3px solid #824CA4;
     box-sizing: border-box
 }
 
-.lot-info{
+.lot-info {
     text-align: left;
     font-family: 'Roboto', serif;
     font-style: normal;
@@ -199,7 +184,7 @@ textarea{
     color: #000000;
 }
 
-.item-info{
+.item-info {
     font-family: 'Roboto', serif;
     font-style: normal;
     font-weight: 400;
@@ -220,7 +205,7 @@ textarea{
 
 }
 
-.grid-container{
+.grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 300px);
