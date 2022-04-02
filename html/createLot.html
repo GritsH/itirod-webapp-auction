@@ -15,33 +15,35 @@
 </header>
 
 <form action="myItems.html">
-    <label for="item-select" class="item-label">
-        Choose item
-    </label> <br>
-    <select id="item-select" class="item-dropdown">
-        <option value="item1"> Item1</option>
-        <option value="item2">Item2</option>
-    </select>
+    <div class="lot-flex-container" style="margin-top: 13px;">
+        <label for="item-select" >
+            Choose item
+        </label>
+        <select id="item-select" class="item-dropdown">
+            <option value="item1"> Item1</option>
+            <option value="item2">Item2</option>
+        </select><br>
 
-    <label for="price-input" class="price-label">
-        Starting price
-    </label>
-    <input type="text" id="price-input" class="starting-price-input"/>
+        <label for="price-input" >
+            Starting price
+        </label>
+        <input type="text" id="price-input" class="starting-price-input"/> <br>
 
-    <label for="step-input" class="step-label">
-        Auction step
-    </label>
-    <input type="text" id="step-input" class="auction-step-input"/>
+        <label for="step-input">
+            Auction step
+        </label>
+        <input type="text" id="step-input" class="auction-step-input"/><br>
 
-    <label for="date-input" class="date-label">
-        Start date
-    </label>
-    <input type="datetime-local" id="date-input" class="starting-date-input"/>
+        <label for="date-input">
+            Start date
+        </label>
+        <input type="datetime-local" id="date-input" class="starting-date-input"/>
+        <br>
+        <button type="submit" class="create-button">
+            <i class="button-text">Create lot</i>
+        </button>
+    </div>
 
-    <button type="submit" class="create-button">
-        <i class="button-text">Create lot</i>
-    </button>
-    <br><br>
 </form>
 
 </body>

@@ -1,63 +1,34 @@
-.item-dropdown{
-    position: absolute;
-    width: 31%;
-    height: 7%;
-    left: 31.5%;
-    top: 25%;
-}
-
-.item-label{
-    position: absolute;
-    top: 20%;
-    left: 31.5%;
-}
-
-.price-label{
-    position: absolute;
-    top: 40%;
-    left: 31.5%;
-}
-.starting-price-input{
-    position: absolute;
-    width: 31%;
-    height: 7%;
-    top: 45%;
-    left: 31.5%;
-}
-
-.step-label{
-    position: absolute;
-    top: 60%;
-    left: 31.5%;
-}
-.auction-step-input{
-    position: absolute;
-    top: 65%;
-    left: 31.5%;
+.item-dropdown {
     width: 31%;
     height: 7%;
 }
 
-.date-label{
-    position: absolute;
-    top: 80%;
-    left: 31.5%;
+.starting-price-input {
+    width: 31%;
+    height: 7%;
 }
 
-.starting-date-input{
-    position: absolute;
-    top: 85%;
-    left: 31.5%;
+
+.auction-step-input {
+    width: 31%;
+    height: 7%;
+}
+
+
+.starting-date-input {
     width: 31%;
     height: 7%
 }
 
-.create-button{
-    position: absolute;
-    top: 25%;
-    left: 75%;
-    width: 10%;
-    height: 8%;
-    bottom: 5%;
+.create-button {
+    width: 13%;
+    height: 45px;
     background: #824CA4;
+}
+
+.lot-flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
