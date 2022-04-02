@@ -17,10 +17,8 @@
 }
 
 .back{
-    position: absolute;
-    top: 15%;
-    width: 15%;
-    margin-left: 77%;
-    height: 7%;
+    align-self: center;
+    width: 40%;
+    height: 15%;
     background: #824CA4;
 }

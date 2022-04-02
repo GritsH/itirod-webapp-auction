@@ -3,22 +3,18 @@ body {
 }
 
 header {
-    position: absolute;
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    width: auto;
     height: 13%;
-    left: 0;
-    right: 0;
-    top: 0;
     background-color: #824CA4;
 }
 
 a.name {
-    position: absolute;
     width: 13%;
     height: 13%;
     left: 39%;
     top: 8px;
-
     font-family: 'Roboto', serif;
     font-style: italic;
     font-weight: 600;
@@ -33,11 +29,9 @@ a.name {
 }
 
 a.name-shadow {
-
-    position: absolute;
     width: 13%;
     height: 13%;
-    left: 39.5%;
+    margin-left: 10px;
     top: 8px;
 
     font-family: 'Roboto', serif;
@@ -58,7 +52,6 @@ a.name-shadow {
     font-weight: 400;
     font-size: 140%;
     line-height: 100%;
-    /* identical to box height */
 
     color: #FFFFFF;
 }
@@ -76,9 +69,6 @@ a.name-shadow {
 }
 
 .scroll {
-    position: absolute;
-    width: 53%;
-    height: 80%;
     left: 3%;
     top: 15%;
 
@@ -227,5 +217,15 @@ textarea{
     font-size: 25px;
     line-height: 53px;
     color: #FFFFFF;
+
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    gap: 30px;
+    justify-items: stretch;
+
 
 }

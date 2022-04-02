@@ -14,33 +14,35 @@
         <a class="name">Auction</a>
     </div>
 </header>
+<div class="grid-container">
+    <div class="scroll" style="grid-row: span 2">
+        <div class="lot-preview">
+            <label class="item-info">Name: </label><br>
+            <label class="item-info">Description: </label><br>
+            <label class="item-info">Starting price: </label><br>
+            <label class="item-info">Auction step: </label><br>
+            <hr style="width: 95%">
 
-<div class="scroll">
-    <div class="lot-preview">
-        <label class="item-info">Name: </label><br>
-        <label class="item-info">Description: </label><br>
-        <label class="item-info">Starting price: </label><br>
-        <label class="item-info">Auction step: </label><br>
-        <hr style="width: 95%">
+            <button class="delete">
+                <i class="button-text">delete</i>
+            </button>
 
-        <button class="delete">
-            <i class="button-text">delete</i>
-        </button>
-
+        </div>
     </div>
+
+    <aside>
+        <button class="my-button" onclick="window.location.href='addItem.html'">
+            <i class="button-text">Add item</i>
+        </button>
+        <button class="my-button" onclick="window.location.href='createLot.html'">
+            <i class="button-text">Create lot</i>
+        </button>
+        <button class="my-button" onclick="window.location.href='loggedIn.html'">
+            <i class="button-text">Back to feed</i>
+        </button>
+    </aside>
 </div>
 
-<aside style="margin-left: 60%; width: 40%; height: 100%; margin-top: 15%;">
-    <button class="my-button" onclick="window.location.href='addItem.html'">
-        <i class="button-text">Add item</i>
-    </button>
-    <button class="my-button" onclick="window.location.href='createLot.html'">
-        <i class="button-text">Create lot</i>
-    </button>
-    <button class="my-button" onclick="window.location.href='loggedIn.html'">
-        <i class="button-text">Back to feed</i>
-    </button>
-</aside>
 
 </body>
 </html>
