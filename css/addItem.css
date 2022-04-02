@@ -1,65 +1,46 @@
 
 .name-label {
-    /*position: absolute;*/
-    top: 20%;
-    left: 5%;
+    margin-top: 20px;
 }
 
 .item-name-input {
-    /*position: absolute;*/
-    width: 31%;
-    height: 7%;
-    left: 5%;
-    top: 25%;
-
+    margin-top: 30px;
     background: rgba(130, 76, 164, 0.29);
     border: 3px solid #824CA4;
     box-sizing: border-box;
 }
 
 .type-dropdown{
-    /*position: absolute;*/
-    width: 31%;
-    height: 7%;
-    left: 5%;
-    top: 50%;
-
+    margin-top: 20px;
 }
 
 .type-label{
-    /*position: absolute;*/
-    top: 45%;
-    left: 5%;
+    margin-top: 100px;
 }
 
 .description-label{
-    /*position: absolute;*/
-    top: 20%;
-    left: 45%;
-
+    margin-top: 20px;
 }
 
 .description-area{
-    /*position: absolute;*/
-    top: 25%;
-    left: 45%;
-    width: 30%;
-    height: 55%;
+    margin-top: 30px;
+    height: 155%;
 
 }
 
 .add-button{
-    /*position: absolute;*/
-    width: 15%;
-    height: 10%;
-    left: 80%;
-    top: 85%;
+    margin-top: 250px;
+    margin-left: 100px;
+    width: 35%;
+    height: 15%;
 
     background: #824CA4;
 }
 
 .add-item-grid{
-    display: flex;
-    flex-direction: row;
-    justify-content: stretch;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 30px;
+    justify-items: stretch;
 }

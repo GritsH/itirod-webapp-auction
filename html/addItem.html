@@ -13,24 +13,27 @@
         <a class="name">Auction</a>
     </div>
 </header>
-<div style="height: 100%">
-    <form action="myItems.html">
-        <label class="name-label" for="name-input">
-            Item's name
-        </label>
-        <input id="name-input" class="item-name-input" type="text"/>
+<form action="myItems.html" style="height: 100%">
+    <div class="add-item-grid">
+        <div style="display: flex; flex-direction: column">
+            <label class="name-label" for="name-input">
+                Item's name
+            </label>
+            <input id="name-input" class="item-name-input" type="text"/>
 
-        <label class="type-label" for="item-type-input">
-            Item's type
-        </label>
-        <select id="item-type-input" class="type-dropdown">
-            <option value="PAINTING">Painting</option>
-            <option value="DECOR"> Decor</option>
-            <option value="BOOK">Book</option>
-            <option value="MUSICAL_INSTRUMENT">Musical instrument</option>
-            <option value="FURNITURE">Furniture</option>
-            <option value="OTHER">Other</option>
-        </select>
+            <label class="type-label" for="item-type-input">
+                Item's type
+            </label>
+            <select id="item-type-input" class="type-dropdown">
+                <option value="PAINTING">Painting</option>
+                <option value="DECOR"> Decor</option>
+                <option value="BOOK">Book</option>
+                <option value="MUSICAL_INSTRUMENT">Musical instrument</option>
+                <option value="FURNITURE">Furniture</option>
+                <option value="OTHER">Other</option>
+            </select>
+        </div>
+
 
         <div style="display: flex; flex-direction: column;">
             <label class="description-label" for="description-input">
@@ -43,9 +46,8 @@
                 Save
             </i>
         </button>
-    </form>
-
-</div>
+    </div>
+</form>
 
 
 </div>
