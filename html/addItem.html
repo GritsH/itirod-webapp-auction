@@ -9,39 +9,45 @@
 </head>
 <body>
 <header>
-    <div>
-        <a class="name-shadow">Auction</a>
+    <div style="z-index: 0">
         <a class="name">Auction</a>
     </div>
 </header>
-<form action="myItems.html">
-    <label class="name-label" for="name-input">
-        Item's name
-    </label>
-    <input id="name-input" class="item-name-input" type="text"/>
+<div style="height: 100%">
+    <form action="myItems.html">
+        <label class="name-label" for="name-input">
+            Item's name
+        </label>
+        <input id="name-input" class="item-name-input" type="text"/>
 
-    <label class="type-label" for="item-type-input">
-        Item's type
-    </label>
-    <select id="item-type-input" class="type-dropdown" >
-        <option value="PAINTING">Painting</option>
-        <option value="DECOR"> Decor</option>
-        <option value="BOOK">Book</option>
-        <option value="MUSICAL_INSTRUMENT">Musical instrument</option>
-        <option value="FURNITURE">Furniture</option>
-        <option value="OTHER">Other</option>
-    </select>
+        <label class="type-label" for="item-type-input">
+            Item's type
+        </label>
+        <select id="item-type-input" class="type-dropdown">
+            <option value="PAINTING">Painting</option>
+            <option value="DECOR"> Decor</option>
+            <option value="BOOK">Book</option>
+            <option value="MUSICAL_INSTRUMENT">Musical instrument</option>
+            <option value="FURNITURE">Furniture</option>
+            <option value="OTHER">Other</option>
+        </select>
 
-    <label class="description-label" for="description-input">
-        Description
-    </label>
-    <textarea id="description-input" class="description-area"></textarea>
+        <div style="display: flex; flex-direction: column;">
+            <label class="description-label" for="description-input">
+                Description
+            </label>
+            <textarea id="description-input" class="description-area"></textarea>
+        </div>
+        <button class="add-button" type="submit">
+            <i class="button-text">
+                Save
+            </i>
+        </button>
+    </form>
 
-    <button class="add-button" type="submit">
-        <i class="button-text">
-            Save
-        </i>
-    </button>
-</form>
+</div>
+
+
+</div>
 </body>
 </html>

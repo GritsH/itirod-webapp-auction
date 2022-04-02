@@ -1,9 +1,5 @@
 .email-input {
-    position: absolute;
     width: 31%;
-    height: 7%;
-    left: 31.5%;
-    top: 27%;
 
     background: rgba(130, 76, 164, 0.29);
     border: 3px solid #824CA4;
@@ -13,11 +9,7 @@
 }
 
 .password-input{
-    position: absolute;
     width: 31%;
-    height: 7%;
-    left: 31.5%;
-    top: 40%;
 
     background: rgba(130, 76, 164, 0.29);
     border: 3px solid #824CA4;
@@ -25,11 +17,7 @@
 }
 
 .repeat-password-input{
-    position: absolute;
     width: 31%;
-    height: 7%;
-    left: 31.5%;
-    top: 60%;
 
     background: rgba(130, 76, 164, 0.29);
     border: 3px solid #824CA4;
@@ -67,13 +55,7 @@ input[type="password"]{
 }
 
 .sign-up{
-
-    position: absolute;
     width: 10%;
-    height: 8%;
-    left: 42%;
-    top: 75%;
-
     background: #824CA4;
 }
 
@@ -82,9 +64,17 @@ input[type="password"]{
     font-family: 'Roboto', serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 150%;
+    font-size: 180%;
     line-height: 100%;
     /* identical to box height */
 
     color: #FFFFFF;
+}
+
+.signingup-container{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
 }

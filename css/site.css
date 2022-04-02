@@ -1,4 +1,9 @@
+html{
+    height: 100vh;
+}
+
 body {
+    height: 100%;
     background: #c2ccff;
 }
 
@@ -96,7 +101,6 @@ input[type="text"] {
     font-weight: 400;
     font-size: 25px;
     line-height: 53px;
-    /* identical to box height */
 
     color: #FFFFFF;
     background: rgba(130, 76, 164, 0.29);
@@ -108,7 +112,6 @@ input[type="password"] {
     font-weight: 400;
     font-size: 25px;
     line-height: 53px;
-    /* identical to box height */
 
     color: #FFFFFF;
     background: rgba(130, 76, 164, 0.29);
@@ -122,7 +125,6 @@ input[type="datetime-local"] {
     font-weight: 400;
     font-size: 25px;
     line-height: 53px;
-    /* identical to box height */
 
     color: #FFFFFF;
     background: rgba(130, 76, 164, 0.29);
@@ -136,7 +138,6 @@ textarea {
     font-weight: 400;
     font-size: 25px;
     line-height: 53px;
-    /* identical to box height */
 
     color: #FFFFFF;
 }

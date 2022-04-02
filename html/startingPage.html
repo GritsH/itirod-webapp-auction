@@ -8,19 +8,21 @@
 </head>
 <body>
 <header>
-    <div>
-        <a class="name-shadow">Auction</a>
-    </div>
-    <div style="z-index: 14">
+    <div style="z-index: 0">
         <a class="name">Auction</a>
     </div>
 </header>
 <form action="loggedIn.html">
-    <input class="email-input" type="text" placeholder="Email"/>
-    <input class="password-input" type="password" placeholder="Password"/>
-    <button class="log-in" type="submit">
-        <i class="button-text">Log in</i></button>
+    <div class="login-container">
+        <input class="email-input" type="text" placeholder="Email"/>
+        <input class="password-input" type="password" placeholder="Password"/>
+        <button class="log-in" type="submit">
+            <i class="button-text" style="font-size: 180%">Log in</i>
+        </button>
+        <p class="sing-up-text"> Don't have an account? You may <a href="signingUp.html">sign up</a> here</p>
+    </div>
+
 </form>
-<p class="sing-up-text"> Don't have an account? You may <a href="signingUp.html">sign up</a> here</p>
+
 </body>
 </html>
