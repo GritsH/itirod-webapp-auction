@@ -6,11 +6,19 @@
     background: #824CA4;
 }
 
+.delete:hover{
+    background: #5F3778;
+}
+
 .my-button {
     margin-top: 9%;
     width: 55%;
     margin-left: 9%;
     height: 40px;
     background: #824CA4;
+}
+
+.my-button:hover{
+    background: #5F3778;
 }
 

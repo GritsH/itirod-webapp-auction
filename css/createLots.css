@@ -26,6 +26,10 @@
     background: #824CA4;
 }
 
+.create-button:hover{
+    background: #5F3778;
+}
+
 .lot-flex-container {
     display: flex;
     flex-direction: column;

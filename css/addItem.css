@@ -37,6 +37,10 @@
     background: #824CA4;
 }
 
+.add-button:hover{
+    background: #5F3778;
+}
+
 .add-item-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);

@@ -18,6 +18,10 @@
     background: #824CA4;
 }
 
+.log-in:hover{
+    background: #5F3778;
+}
+
 .login-container{
     margin-top: 5%;
     display: flex;
@@ -41,4 +45,12 @@
     text-align: center;
 
     color: #824CA4;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
 }

@@ -1,8 +1,8 @@
-.scroll{
+.scroll {
     left: 20%;
 }
 
-.watch{
+.watch {
     width: 20%;
     margin-left: 60%;
     margin-bottom: 10px;
@@ -10,9 +10,17 @@
     background: #824CA4;
 }
 
-.back{
+.watch:hover {
+    background: #5F3778;
+}
+
+.back {
     align-self: center;
     width: 40%;
     height: 15%;
     background: #824CA4;
+}
+
+.back:hover {
+    background: #5F3778;
 }

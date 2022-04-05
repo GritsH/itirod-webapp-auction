@@ -20,6 +20,10 @@
     background: #824CA4;
 }
 
+.participate:hover{
+    background: #5F3778;
+}
+
 .user-mail {
     display: inline-block;
     margin-left: 20%;
@@ -49,5 +53,9 @@
     margin-left: 9%;
     height: 40px;
     background: #824CA4;
+}
+
+.my-button:hover{
+    background: #5F3778;
 }
 

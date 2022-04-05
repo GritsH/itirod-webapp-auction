@@ -59,6 +59,10 @@ input[type="password"]{
     background: #824CA4;
 }
 
+.sign-up:hover{
+    background: #5F3778;
+}
+
 .button-text{
     position: center;
     font-family: 'Roboto', serif;
