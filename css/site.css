@@ -47,11 +47,11 @@ a.name {
 }
 
 .lot-preview {
+    display: flex;
+    flex-direction: column;
     top: 10%;
-    height: 65%;
     left: 3%;
     right: 3%;
-    /*text-align: center;*/
     background: #FDF0F0;
     border: 1px solid #824CA4;
     box-sizing: border-box;
