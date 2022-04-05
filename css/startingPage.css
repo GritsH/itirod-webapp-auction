@@ -8,8 +8,16 @@
 
 }
 
+.email-input:focus{
+    background: rgba(187, 102, 242, 0.5);
+}
+
 .password-input{
     width: 31%;
+}
+
+.password-input:focus{
+    background: rgba(187, 102, 242, 0.5);
 }
 
 .log-in{

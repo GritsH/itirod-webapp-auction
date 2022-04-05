@@ -5,7 +5,10 @@
     border: 3px solid #824CA4;
     box-sizing: border-box;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
+.email-input:focus{
+    background: rgba(187, 102, 242, 0.5);
 }
 
 .password-input{
@@ -16,12 +19,20 @@
     box-sizing: border-box;
 }
 
+.password-input:focus{
+    background: rgba(187, 102, 242, 0.5);
+}
+
 .repeat-password-input{
     width: 31%;
 
     background: rgba(130, 76, 164, 0.29);
     border: 3px solid #824CA4;
     box-sizing: border-box;
+}
+
+.repeat-password-input:focus{
+    background: rgba(187, 102, 242, 0.5);
 }
 
 ::-webkit-input-placeholder {

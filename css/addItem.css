@@ -10,8 +10,16 @@
     box-sizing: border-box;
 }
 
+.item-name-input:focus{
+    background: rgba(187, 102, 242, 0.5);
+}
+
 .type-dropdown{
     margin-top: 20px;
+}
+
+.type-dropdown:focus{
+    background: rgba(187, 102, 242, 0.5);
 }
 
 .type-label{
@@ -26,6 +34,10 @@
     margin-top: 30px;
     height: 155%;
 
+}
+
+.description-area:focus{
+    background: rgba(187, 102, 242, 0.5);
 }
 
 .add-button{
