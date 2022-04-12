@@ -1,0 +1,62 @@
+
+.name-label {
+    margin-top: 20px;
+}
+
+.item-name-input {
+    margin-top: 30px;
+    background: rgba(130, 76, 164, 0.29);
+    border: 3px solid #824CA4;
+    box-sizing: border-box;
+}
+
+.item-name-input:focus{
+    background: rgba(187, 102, 242, 0.5);
+}
+
+.type-dropdown{
+    margin-top: 20px;
+}
+
+.type-dropdown:focus{
+    background: rgba(187, 102, 242, 0.5);
+}
+
+.type-label{
+    margin-top: 100px;
+}
+
+.description-label{
+    margin-top: 20px;
+}
+
+.description-area{
+    margin-top: 30px;
+    height: 155%;
+
+}
+
+.description-area:focus{
+    background: rgba(187, 102, 242, 0.5);
+}
+
+.add-button{
+    margin-top: 250px;
+    margin-left: 100px;
+    width: 35%;
+    height: 15%;
+
+    background: #824CA4;
+}
+
+.add-button:hover{
+    background: #5F3778;
+}
+
+.add-item-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 30px;
+    justify-items: stretch;
+}

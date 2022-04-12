@@ -1,0 +1,51 @@
+.item-dropdown {
+    width: 31%;
+    height: 7%;
+}
+.item-dropdown:focus{
+    background: rgba(187, 102, 242, 0.5);
+}
+
+.starting-price-input {
+    width: 31%;
+    height: 7%;
+}
+
+.starting-price-input:focus{
+    background: rgba(187, 102, 242, 0.5);
+}
+
+.auction-step-input {
+    width: 31%;
+    height: 7%;
+}
+
+.auction-step-input:focus{
+    background: rgba(187, 102, 242, 0.5);
+}
+
+.starting-date-input {
+    width: 20rem;
+    height: 3rem;
+}
+
+.starting-date-input:focus{
+    background: rgba(187, 102, 242, 0.5);
+}
+
+.create-button {
+    width: 13%;
+    height: 45px;
+    background: #824CA4;
+}
+
+.create-button:hover{
+    background: #5F3778;
+}
+
+.lot-flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}

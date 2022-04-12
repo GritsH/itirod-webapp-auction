@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="../css/site.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/createLots.css"/>
+
+</head>
+<body>
+<header>
+    <div style="z-index: 0">
+        <a class="name">Auction</a>
+    </div>
+</header>
+
+<form action="myItems.html">
+    <div class="lot-flex-container" style="margin-top: 13px;">
+        <label for="item-select" >
+            Choose item
+        </label>
+        <select id="item-select" class="item-dropdown">
+            <option value="item1"> Item1</option>
+            <option value="item2">Item2</option>
+        </select><br>
+
+        <label for="price-input" >
+            Starting price
+        </label>
+        <input type="text" id="price-input" class="starting-price-input"/> <br>
+
+        <label for="step-input">
+            Auction step
+        </label>
+        <input type="text" id="step-input" class="auction-step-input"/><br>
+
+        <label for="date-input">
+            Start date
+        </label>
+        <input type="datetime-local" id="date-input" class="starting-date-input"/>
+        <br>
+        <button type="submit" class="create-button">
+            <i class="button-text">Create lot</i>
+        </button>
+    </div>
+
+</form>
+
+</body>
+</html>

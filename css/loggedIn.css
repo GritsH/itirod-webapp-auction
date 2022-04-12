@@ -1,0 +1,61 @@
+
+
+.user-window {
+    display: inline-block;
+    top: 15%;
+
+    background: rgba(130, 76, 164, 0.29);
+    border: 5px solid #824CA4;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.participate {
+    width: 22%;
+    height: 40px;
+    margin-left: 60%;
+    margin-top: 0.1%;
+    margin-bottom: 15px;
+    background: #824CA4;
+}
+
+.participate:hover{
+    background: #5F3778;
+}
+
+.user-mail {
+    display: inline-block;
+    margin-left: 20%;
+    width: 50%;
+
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 150%;
+    line-height: 35px;
+    text-align: center;
+
+    color: #5A2B2B;
+}
+
+.button-row {
+    display: flex;
+}
+
+.button-column {
+    flex: 50%;
+}
+
+.my-button {
+    margin-top: 9%;
+    width: 85%;
+    margin-left: 9%;
+    height: 40px;
+    background: #824CA4;
+}
+
+.my-button:hover{
+    background: #5F3778;
+}
+

@@ -1,0 +1,216 @@
+html{
+    height: 100vh;
+}
+
+body {
+    height: 100%;
+    background: #c2ccff;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 13%;
+    background-color: #824CA4;
+}
+
+a.name {
+    text-shadow: black 5px 0px;
+    width: 13%;
+    height: 13%;
+    left: 39%;
+    top: 8px;
+    font-family: 'Roboto', serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 75px;
+
+    text-align: center;
+
+    color: #FFFFFF;
+
+    mix-blend-mode: lighten;
+}
+
+
+.button-text {
+    position: center;
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 140%;
+    line-height: 100%;
+
+    color: #FFFFFF;
+}
+
+.lot-preview {
+    display: flex;
+    flex-direction: column;
+    top: 10%;
+    left: 3%;
+    right: 3%;
+    background: #FDF0F0;
+    border: 1px solid #824CA4;
+    box-sizing: border-box;
+    border-radius: 37px;
+}
+
+.scroll {
+    left: 3%;
+    top: 15%;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    background: rgba(130, 76, 164, 0.29);
+    border: 5px solid #824CA4;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.item-info {
+    display: inline-block;
+    text-align: left;
+    margin-left: 28%;
+    width: 25%;
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 120%;
+    line-height: 135%;
+}
+
+.lot-info {
+    display: inline-block;
+    text-align: left;
+    margin-left: 3%;
+    width: 25%;
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 120%;
+    line-height: 135%;
+}
+
+input[type="text"] {
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 53px;
+
+    color: #FFFFFF;
+    background: rgba(130, 76, 164, 0.29);
+    border: 3px solid #824CA4;
+    box-sizing: border-box;
+}
+
+input[type="password"] {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 53px;
+
+    color: #FFFFFF;
+    background: rgba(130, 76, 164, 0.29);
+    border: 3px solid #824CA4;
+    box-sizing: border-box;
+}
+
+input[type="datetime-local"] {
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 53px;
+
+    color: #FFFFFF;
+    background: rgba(130, 76, 164, 0.29);
+    border: 3px solid #824CA4;
+    box-sizing: border-box;
+}
+
+textarea {
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 53px;
+
+    color: #FFFFFF;
+}
+
+label {
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 170%;
+    line-height: 50%;
+    text-align: left;
+
+    color: #824CA4;
+}
+
+select {
+    background: rgba(130, 76, 164, 0.29);
+    border: 3px solid #824CA4;
+    box-sizing: border-box;
+
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 170%;
+    line-height: 50%;
+    text-align: left;
+
+    color: #FFFFFF;
+}
+
+textarea {
+    background: rgba(130, 76, 164, 0.29);
+    border: 3px solid #824CA4;
+    box-sizing: border-box
+}
+
+.lot-info {
+    text-align: left;
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 135%;
+    line-height: 130%;
+
+    color: #000000;
+}
+
+.item-info {
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 130%;
+    line-height: 125%;
+    text-align: left;
+
+    color: #000000;
+}
+
+::-webkit-input-placeholder {
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 53px;
+    color: #FFFFFF;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    gap: 30px;
+    justify-items: stretch;
+
+}
