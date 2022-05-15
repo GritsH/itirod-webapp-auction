@@ -214,3 +214,14 @@ textarea {
     justify-items: stretch;
 
 }
+
+.error-login{
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 150%;
+    line-height: 35px;
+    text-align: center;
+
+    color: #5A2B2B;
+}

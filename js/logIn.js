@@ -1,7 +1,8 @@
 import {
     logInBtn,
     emailLogging,
-    passwordLogging, errorEmail, noUser, errorPassword
+    passwordLogging, errorEmail, noUser, errorPassword,
+    userEmail
 } from "./general.js"
 
 import{ initializeApp}from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
@@ -31,6 +32,7 @@ const loginEmailPassword = async () => {
         const userCredential = await signInWithEmailAndPassword(auth, loginEmail, loginPassword);
         console.log(userCredential.user);
         window.location.href = 'html/loggedIn.html';
+        //document.getElementById('userEmail').innerHTML = loginEmail;
     } catch (error) {
         let errCode = error.code;
         if(errCode === 'auth/invalid-email'){

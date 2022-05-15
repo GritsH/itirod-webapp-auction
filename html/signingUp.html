@@ -15,8 +15,11 @@
 <form>
     <div class="signingup-container">
         <input class="email-input" id="emailSignup" type="text" placeholder="Email"/>
+        <p class="error-login" id="errorEmail" hidden="true">Invalid email</p>
         <input class="password-input" id="passwordSignup" type="password" placeholder="Password"/>
         <input class="repeat-password-input" id="repeatPassword" type="password" placeholder="Repeat password"/>
+        <p class="error-login" id="differentPasswords" hidden="true">Passwords do not match</p>
+        <p class="error-login" id="invalidData" hidden="true">Invalid data</p>
         <button style="height: 55px" id="signUpBtn" class="sign-up" type="button">
             <i class="button-text">Sign up</i>
         </button>

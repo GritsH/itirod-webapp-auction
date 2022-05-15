@@ -1,4 +1,12 @@
-import {emailSignup, passwordSignup, repeatPassword, signUpBtn} from "./general.js"
+import {
+    differentPasswords, emailSignup,
+    passwordSignup,
+    repeatPassword,
+    signUpBtn,
+    errorPassword, errorEmail,
+    invalidData, emailLogging
+
+} from "./general.js"
 
 import {initializeApp} from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
 import {createUserWithEmailAndPassword, getAuth,} from "https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js";
@@ -25,10 +33,32 @@ const createAccount = async () => {
         if (regPassword === regRepeatPassword) {
             const userCredential = await createUserWithEmailAndPassword(auth, regEmail, regPassword);
             console.log(userCredential.user);
-            window.location.href = '../html/startingPage.html';
+            window.location.href = '../index.html';
         }
+        passwordSignup.setAttribute('class', 'error');
+        repeatPassword.setAttribute('class', 'error');
+        differentPasswords.removeAttribute('hidden');
+        errorPassword.removeAttribute('hidden');
     } catch (error) {
-        console.log(error);
+        let errorCode = error.code;
+        if (errorCode === 'auth/invalid-email') {
+            emailSignup.setAttribute('class', 'error');
+            errorEmail.removeAttribute('hidden');
+            differentPasswords.setAttribute('hidden', true);
+            console.log(error);
+        } else if (errorCode === 'auth/weak-password') {
+            emailSignup.removeAttribute('class');
+            errorEmail.setAttribute('hidden', true);
+            passwordSignup.setAttribute('class', 'error');
+            repeatPassword.setAttribute('class', 'error');
+            errorPassword.removeAttribute('hidden');
+            differentPasswords.setAttribute('hidden', true);
+            console.log(error);
+        } else {
+            invalidData.removeAttribute('hidden');
+            differentPasswords.setAttribute('hidden', true);
+            console.log(error);
+        }
     }
 }
 signUpBtn.addEventListener("click", createAccount);
