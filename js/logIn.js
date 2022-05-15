@@ -30,7 +30,7 @@ const loginEmailPassword = async () => {
     try {
         const userCredential = await signInWithEmailAndPassword(auth, loginEmail, loginPassword);
         console.log(userCredential.user);
-        window.location.href = '../html/loggedIn.html';
+        window.location.href = 'html/loggedIn.html';
     } catch (error) {
         let errCode = error.code;
         if(errCode === 'auth/invalid-email'){
