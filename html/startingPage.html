@@ -15,7 +15,10 @@
 <form>
     <div class="login-container">
         <input class="email-input" id="emailLogging" type="text" placeholder="Email"/>
+        <p class="error-login" id="errorEmail" hidden="true">wrong email</p>
         <input class="password-input" id="passwordLogging" type="password" placeholder="Password"/>
+        <p class="error-login" id="errorPassword" hidden="true">Wrong password</p>
+        <p class="error-login" id="noUser" hidden="true">No such user</p>
         <button class="log-in" id="logInBtn" type="button">
             <i class="button-text" style="font-size: 180%">Log in</i>
         </button>

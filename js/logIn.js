@@ -1,6 +1,8 @@
-import {logInBtn,
+import {
+    logInBtn,
     emailLogging,
-    passwordLogging}from "./general.js"
+    passwordLogging, errorEmail, noUser, errorPassword
+} from "./general.js"
 
 import{ initializeApp}from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
 import{
@@ -21,7 +23,6 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 const auth = getAuth(app);
-// connectAuthEmulator(auth, "http://localhost:9099/%22);
 const loginEmailPassword = async () => {
     const loginEmail = emailLogging.value;
     localStorage.setItem('name',loginEmail);
@@ -31,7 +32,23 @@ const loginEmailPassword = async () => {
         console.log(userCredential.user);
         window.location.href = '../html/loggedIn.html';
     } catch (error) {
-        console.log(error);
+        let errCode = error.code;
+        if(errCode === 'auth/invalid-email'){
+            emailLogging.setAttribute('class', 'error');
+            errorEmail.removeAttribute('hidden');
+            noUser.removeAttribute('hidden');
+            console.log(error);
+        } else if (errCode === 'auth/wrong-password'){
+            passwordLogging.setAttribute('class', 'error');
+            errorPassword.removeAttribute('hidden');
+            noUser.setAttribute('hidden', true);
+            console.log(error)
+        }else {
+            errorEmail.setAttribute('hidden', true);
+            errorPassword.setAttribute('hidden', true);
+            noUser.removeAttribute('hidden');
+            console.log(error);
+        }
     }
 }
 logInBtn.addEventListener("click", loginEmailPassword);
