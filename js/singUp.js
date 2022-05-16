@@ -10,6 +10,8 @@ import {
 
 import {initializeApp} from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
 import {createUserWithEmailAndPassword, getAuth,} from "https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js";
+import {myDB} from "./db/db.js"
+import {User} from "./entities/user.js";
 
 const firebaseConfig = {
     apiKey: "AIzaSyCxkqdo5AvSUt154BEK0ugZDE4aWuKHUME",
@@ -24,7 +26,6 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 const auth = getAuth(app);
-// connectAuthEmulator(auth, "http://localhost:9099/%22);
 const createAccount = async () => {
     const regEmail = emailSignup.value;
     const regPassword = passwordSignup.value;
@@ -32,6 +33,7 @@ const createAccount = async () => {
     try {
         if (regPassword === regRepeatPassword) {
             const userCredential = await createUserWithEmailAndPassword(auth, regEmail, regPassword);
+            await myDB.addUser(new User(regEmail, 'user'));
             console.log(userCredential.user);
             window.location.href = '../index.html';
         }
