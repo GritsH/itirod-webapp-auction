@@ -48,7 +48,7 @@ class MyDB {
     async addItem(item) {
         try {
             const docRef = await setDoc(doc(this.db, "items", item.id.toString()), {
-                id_: item.id.toString(),
+                id: item.id,
                 description: item.description,
                 itemName: item.itemName,
                 itemType: item.itemType,
