@@ -24,3 +24,5 @@ export const priceInput = document.querySelector('#price-input')
 export const stepInput = document.querySelector('#step-input')
 export const dateInput = document.querySelector('#date-input')
 export const createLotBtn = document.querySelector('#create-lot-btn')
+
+export const myItemsScroll = document.querySelector('#my-items-scroll')

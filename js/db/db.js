@@ -1,7 +1,15 @@
 import {initializeApp} from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
-import{ getFirestore} from "https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js";
+import {getFirestore} from "https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js";
 
-import {collection, addDoc, doc, setDoc} from "https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js";
+import {
+    collection,
+    addDoc,
+    doc,
+    setDoc,
+    where,
+    query,
+    getDocs
+} from "https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js";
 
 
 const firebaseConfig = {
@@ -18,7 +26,7 @@ const initTime = Date.now();
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
-class MyDB{
+class MyDB {
     constructor() {
         this.app = app;
         this.db = db;
@@ -51,7 +59,7 @@ class MyDB{
         }
     }
 
-    async addLot(lot){
+    async addLot(lot) {
         try {
             const docRef = await setDoc(doc(this.db, "lots", lot.id.toString()), {
                 auctionStep: lot.auctionStep,
@@ -66,19 +74,8 @@ class MyDB{
         }
     }
 
-    getUser(id){
 
-    }
-
-    getItem(id){
-
-    }
-
-    getLot(id){
-
-    }
-
-    updateLot(id, price, lotLeader){
+    updateLot(id, price, lotLeader) {
 
     }
 }
