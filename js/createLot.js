@@ -22,7 +22,7 @@ querySnapshot.forEach((doc)=>{
 });
 
 const CreateLot = async () => {
-    await myDB.addLot(new Lot(2, priceInput.value, stepInput.value, priceInput.value, itemSelect.value, null, dateInput.value));
+    await myDB.addLot(new Lot(4, priceInput.value, stepInput.value, priceInput.value, itemSelect.value, null, dateInput.value));
     window.location.href = 'myItems.html';
 }
 createLotBtn.addEventListener("click", CreateLot)

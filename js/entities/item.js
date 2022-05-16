@@ -1,6 +1,6 @@
 export class Item{
     constructor(itemName, itemType, ownerId, description){
-        this.id = 6;
+        this.id = 9;
         this.itemName = itemName;
         this.itemType = itemType;
         this.ownerId = ownerId;

@@ -13,7 +13,7 @@ const itemsRef = collection(myDB.db, "items");
 
 function getItemNameAndDescription(doc, callback) {
     const itemInfo = [2];
-    const q = query(itemsRef, where("id_", "==", doc.data().itemId));
+    const q = query(itemsRef, where("id", "==", doc.data().itemId));
     getDocs(q).then(querySnapshot2=>{
         querySnapshot2.forEach((doc_) => {
             itemInfo[0] = doc_.data().itemName;
@@ -28,10 +28,9 @@ querySnapshot.forEach((doc) => {
     const startingPrice = doc.data().startingPrice;
     const step = doc.data().auctionStep;
     const date = doc.data().startDate.replace("T", " ");
-    //const id__ =  doc.data().itemId;
+    const inDiv = document.createElement('div');
     getItemNameAndDescription(doc, (returnedInfo)=>{
         console.log(returnedInfo[0], returnedInfo[1]);
-        const inDiv = document.createElement('div');
         inDiv.innerHTML = "<div class=\"lot-preview\">" +
             "            <p class=\"item-info\">Name: \"" + returnedInfo[0] + "\"</p>" +
             "            <p class=\"item-info\">Description: \"" + returnedInfo[1] + "\"</p>" +
@@ -44,6 +43,6 @@ querySnapshot.forEach((doc) => {
             "                <i class=\"button-text\">Participate</i>" +
             "            </button>" +
             "        </div>";
-        mainPageLots.appendChild(inDiv);
     });
+    mainPageLots.appendChild(inDiv);
 });
