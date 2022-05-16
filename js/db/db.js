@@ -53,8 +53,7 @@ class MyDB{
 
     async addLot(lot){
         try {
-            const docRef = await setDoc(doc(this.db, "items", lot.id.toString()), {
-                id: lot.id,
+            const docRef = await setDoc(doc(this.db, "lots", lot.id.toString()), {
                 auctionStep: lot.auctionStep,
                 currentPrice: lot.currentPrice,
                 itemId: lot.itemId,
