@@ -1,11 +1,12 @@
 export class Lot {
-    constructor(id, startingPrice, auctionStep, currentPrice, itemId, leaderId) {
+    constructor(id, startingPrice, auctionStep, currentPrice, itemId, leaderId, date) {
         this.id = id;
         this.startingPrice = startingPrice;
         this.auctionStep = auctionStep;
         this.currentPrice = currentPrice;
         this.itemId = itemId;
         this.leaderId = leaderId;
+        this.date = date;
     }
 
     toString() {
