@@ -1,5 +1,5 @@
-import {myDB} from "./db/db.js";
-import{myItemsScroll} from "./general.js";
+import {myDB} from "../db/db.js";
+import{myItemsScroll} from "../general.js";
 
 import {collection, where, query, getDocs} from "https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js";
 
