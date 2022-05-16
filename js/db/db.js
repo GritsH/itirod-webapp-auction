@@ -48,6 +48,7 @@ class MyDB {
     async addItem(item) {
         try {
             const docRef = await setDoc(doc(this.db, "items", item.id.toString()), {
+                id_: item.id.toString(),
                 description: item.description,
                 itemName: item.itemName,
                 itemType: item.itemType,
@@ -66,7 +67,8 @@ class MyDB {
                 currentPrice: lot.currentPrice,
                 itemId: lot.itemId,
                 leaderId: lot.leaderId,
-                startingPrice: lot.startingPrice
+                startingPrice: lot.startingPrice,
+                startDate: lot.date.toString()
             });
             console.log("Document is written with ID => ", docRef.id);
         } catch (error) {
