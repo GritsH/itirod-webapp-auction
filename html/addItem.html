@@ -13,7 +13,7 @@
         <a class="name">Auction</a>
     </div>
 </header>
-<form action="myItems.html" style="height: 100%">
+<form>
     <div class="add-item-grid">
         <div style="display: flex; flex-direction: column">
             <label class="name-label" for="name-input">
@@ -42,7 +42,7 @@
             </label>
             <textarea id="description-input" class="description-area"></textarea>
         </div>
-        <button class="add-button" type="submit">
+        <button id="save-item-btn" class="add-button" type="button">
             <i class="button-text">
                 Save
             </i>
@@ -52,5 +52,6 @@
 
 
 </div>
+<script type="module" src="../js/addItem.js"></script>
 </body>
 </html>

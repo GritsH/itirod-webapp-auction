@@ -13,3 +13,8 @@ export const repeatPassword = document.querySelector('#repeatPassword')
 export const differentPasswords = document.querySelector('#differentPasswords')
 export const invalidData = document.querySelector('#invalidData')
 export const signUpBtn = document.querySelector('#signUpBtn')
+
+export const itemNameField = document.querySelector('#name-input')
+export const itemType = document.querySelector('#item-type-input')
+export const itemDescription = document.querySelector('#description-input')
+export const saveItem = document.querySelector('#save-item-btn')

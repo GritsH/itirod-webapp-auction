@@ -1,13 +1,10 @@
 export class Item{
-    constructor(id, itemName, itemType, ownerId, description){
-        this.id = id;
+    constructor(itemName, itemType, ownerId, description){
+        this.id = 6;
         this.itemName = itemName;
         this.itemType = itemType;
         this.ownerId = ownerId;
         this.description = description;
-    }
-    toString(){
-        return this.id + ', ' + this.itemName +', ' + this.itemType + ', ' + this.ownerId + ', ' + this.description;
     }
 }
 
