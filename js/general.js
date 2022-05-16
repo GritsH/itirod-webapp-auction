@@ -26,3 +26,5 @@ export const dateInput = document.querySelector('#date-input')
 export const createLotBtn = document.querySelector('#create-lot-btn')
 
 export const myItemsScroll = document.querySelector('#my-items-scroll')
+
+export const mainPageLots = document.querySelector('#main-page-lots')
