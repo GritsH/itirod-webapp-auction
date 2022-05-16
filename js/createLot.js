@@ -15,14 +15,14 @@ const q = query(itemsRef, where("ownerId", "==", localStorage.getItem("name")));
 const querySnapshot = await getDocs(q);
 querySnapshot.forEach((doc)=>{
     const opt = document.createElement('option');
-    opt.value = doc.data().itemName;
+    opt.value = doc.id;
     opt.innerHTML = doc.data().itemName;
     itemSelect.appendChild(opt);
 
 });
 
 const CreateLot = async () => {
-    await myDB.addLot(new Lot(1, priceInput.value, stepInput.value, priceInput.value, itemSelect.value, null, dateInput.value));
+    await myDB.addLot(new Lot(2, priceInput.value, stepInput.value, priceInput.value, itemSelect.value, null, dateInput.value));
     window.location.href = 'myItems.html';
 }
 createLotBtn.addEventListener("click", CreateLot)
