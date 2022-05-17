@@ -1,5 +1,5 @@
 import {initializeApp} from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
-import {getFirestore} from "https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js";
+import {deleteDoc, getFirestore} from "https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js";
 
 import {
     collection,
@@ -49,6 +49,7 @@ class MyDB {
         try {
             const docRef = await setDoc(doc(this.db, "items", item.id.toString()), {
                 id: item.id.toString(),
+                isLot: item.isLot,
                 description: item.description,
                 itemName: item.itemName,
                 itemType: item.itemType,
@@ -76,6 +77,9 @@ class MyDB {
         }
     }
 
+    async deleteItem(itemId) {
+        await deleteDoc(this.db, "items", itemId.toString());
+    }
 
     updateLot(id, price, lotLeader) {
 

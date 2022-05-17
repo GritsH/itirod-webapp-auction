@@ -1,10 +1,11 @@
 export class Item{
-    constructor(itemName, itemType, ownerId, description){
+    constructor(itemName, itemType, ownerId, description, isLot){
         this.id = 9;
         this.itemName = itemName;
         this.itemType = itemType;
         this.ownerId = ownerId;
         this.description = description;
+        this.isLot = isLot;
     }
 }
 
