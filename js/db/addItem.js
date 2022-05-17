@@ -8,7 +8,7 @@ import {
 } from "../general.js";
 
 const AddItem = async () => {
-    await myDB.addItem(new Item( itemNameField.value, itemType.value, localStorage.getItem("name"), itemDescription.value));
+    await myDB.addItem(new Item( itemNameField.value, itemType.value, localStorage.getItem("name"), itemDescription.value, false));
     window.location.href = 'myItems.html';
 }
 saveItem.addEventListener("click", AddItem);
