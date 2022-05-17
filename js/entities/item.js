@@ -1,5 +1,8 @@
 export class Item {
     constructor(itemName, itemType, ownerId, description, isLot) {
+        if (localStorage.getItem("latestItemId") === null) {
+            localStorage.setItem("latestItemId", "0");
+        }
         let tempId = parseInt(localStorage.getItem("latestItemId")) + 1;
         this.id = tempId;
         this.itemName = itemName;

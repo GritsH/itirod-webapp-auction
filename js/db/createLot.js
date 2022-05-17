@@ -33,6 +33,9 @@ const itemUpdateRef = doc(myDB.db, "items", itemSelect.value);
 
 
 const CreateLot = async () => {
+    if(localStorage.getItem("latestLotId") === null){
+        localStorage.setItem("latestLotId", "0");
+    }
     const lotid = parseInt(localStorage.getItem("latestLotId")) + 1;
     await myDB.addLot(new Lot(lotid, priceInput.value, stepInput.value, priceInput.value, itemSelect.value, null, dateInput.value));
     localStorage.setItem("latestLotId", lotid.toString());
