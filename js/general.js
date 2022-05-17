@@ -28,3 +28,5 @@ export const createLotBtn = document.querySelector('#create-lot-btn')
 export const myItemsScroll = document.querySelector('#my-items-scroll')
 
 export const mainPageLots = document.querySelector('#main-page-lots')
+
+export const myAuctions = document.querySelector('#myAuctionsDisplayer')

@@ -9,9 +9,6 @@ import {
     deleteDoc
 } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js";
 
-// async function deleteItem(itemId) {
-//     await myDB.deleteItem(itemId);
-// }
 
 const itemsRef = collection(myDB.db, "items");
 const q = query(itemsRef, where("ownerId", "==", localStorage.getItem("name")));
@@ -30,10 +27,14 @@ querySnapshot.forEach((doc) => {
             "            </button>" +
             "        </div>";
         myItemsScroll.appendChild(inDiv);
-        document.getElementById("delItemBtn" + doc.id.toString()).addEventListener("click", function () {
-                document.getElementById("divItem" + doc.id.toString()).remove()
+
+        const delBtn = document.getElementById("delItemBtn" + doc.id.toString());
+        delBtn.addEventListener("click",  function () {
+                document.getElementById("divItem" + doc.id.toString()).remove();
+                deleteDoc(doc.id.toString());
             }
         );
+
     }
 });
 
