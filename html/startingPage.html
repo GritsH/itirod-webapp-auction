@@ -12,17 +12,22 @@
         <a class="name">Auction</a>
     </div>
 </header>
-<form action="loggedIn.html">
+<form>
     <div class="login-container">
-        <input class="email-input" type="text" placeholder="Email"/>
-        <input class="password-input" type="password" placeholder="Password"/>
-        <button class="log-in" type="submit">
+        <input class="email-input" id="emailLogging" type="text" placeholder="Email"/>
+        <p class="error-login" id="errorEmail" hidden="true">wrong email</p>
+        <input class="password-input" id="passwordLogging" type="password" placeholder="Password"/>
+        <p class="error-login" id="errorPassword" hidden="true">Wrong password</p>
+        <p class="error-login" id="noUser" hidden="true">No such user</p>
+        <button class="log-in" id="logInBtn" type="button">
             <i class="button-text" style="font-size: 180%">Log in</i>
         </button>
         <p class="sing-up-text"> Don't have an account? You may <a href="signingUp.html">sign up</a> here</p>
     </div>
 
 </form>
+<script type="module" src="../js/general.js" ></script>
+<script type="module" src="../js/logIn.js" ></script>
 
 </body>
 </html>
